@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/edicttext1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="50dp"
+        android:hint="请输入第一个"
+
+        />
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="第一个按钮"
+        android:textSize="50dp"
+        />
+    <Button
+        android:id="@+id/fragment1_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment1_button"
+
+        />
+
+
+</LinearLayout>

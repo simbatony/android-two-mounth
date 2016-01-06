@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.simba.myapplication.service.serviceActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></LinearLayout>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+    <Button
+        android:id="@+id/startservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startservice"
+        android:background="@drawable/buttoniimage"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/stopservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startservice"
+        android:text="stopservice"
+        android:background="@drawable/buttoniimage"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></LinearLayout>
+</LinearLayout>

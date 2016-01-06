@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.example.simba.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.5.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.github.eluleci:flatui:3.0.0'
+    compile 'pl.tajchert:waitingdots:0.2.0'
+    compile 'com.victor:lib:1.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.github.traex.rippleeffect:library:1.3'
+    compile 'com.plattysoft.leonids:LeonidsLib:1.3.1'
+    compile 'com.ikimuhendis:ldrawer:0.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.1.0'
+    compile 'me.drakeet.materialdialog:library:1.2.8'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.0'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+
+
+}

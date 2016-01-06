@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set_pop"
+    android:layout_gravity="bottom"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/mydialogtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#403d3d"
+        android:text="点击特效"
+        />
+
+</RelativeLayout>

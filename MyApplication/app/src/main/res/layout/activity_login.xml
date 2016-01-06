@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#383838"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loading"
+        android:textSize="45sp"
+
+        />
+  <!--  loading简单动画-->
+    <pl.tajchert.sample.DotsTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/dots"
+        android:textSize="45sp"
+        dots:autoplay="true"
+        dots:period="1000"/>
+
+    <ProgressBar
+        android:id="@+id/google_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
+
+    <com.victor.loading.newton.NewtonCradleLoading
+        android:id="@+id/newton_cradle_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"/>
+
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

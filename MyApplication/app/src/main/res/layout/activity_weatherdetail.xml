@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View android:id="@+id/separator"
+        android:background="#f10707"
+        android:layout_width = "3dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="100dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logoweather"
+            android:scaleType="fitXY"
+            />
+
+
+        <ImageView
+            android:id="@+id/backweatherdatail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backweather"
+            android:layout_gravity="center_vertical"
+            />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/weekimage"
+                android:src="@drawable/images"
+                android:layout_marginLeft="75dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:id="@+id/weektext"
+                android:paddingLeft="10dp"
+                android:layout_alignTop="@+id/weekimage"
+                android:layout_toRightOf="@+id/weekimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:paddingLeft="10dp"
+                android:textSize="30dp"
+                android:id="@+id/weektext2"
+                android:layout_below="@+id/weektext"
+                android:layout_toRightOf="@+id/weekimage"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/temperatureimage"
+                android:src="@drawable/images"
+                android:layout_marginLeft="75dp"
+                />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="温度"
+               android:id="@+id/temperaturetext"
+               android:paddingLeft="10dp"
+               android:layout_alignTop="@+id/temperatureimage"
+               android:layout_toRightOf="@+id/temperatureimage"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="温度"
+               android:paddingLeft="10dp"
+               android:textSize="30dp"
+               android:id="@+id/temperaturetext2"
+               android:layout_below="@+id/temperaturetext"
+               android:layout_toRightOf="@+id/temperatureimage"
+               />
+
+       </RelativeLayout>
+
+
+
+
+
+
+        <!--weather-->
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/weatherimage"
+                android:src="@drawable/images"
+                android:layout_marginLeft="75dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气"
+                android:id="@+id/weathertext"
+                android:paddingLeft="10dp"
+                android:layout_alignTop="@+id/weatherimage"
+                android:layout_toRightOf="@+id/weatherimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:paddingLeft="10dp"
+                android:textSize="30dp"
+                android:id="@+id/weathertext2"
+                android:layout_below="@+id/weathertext"
+                android:layout_toRightOf="@+id/weatherimage"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/windimage"
+                android:src="@drawable/images"
+                android:layout_marginLeft="75dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风"
+                android:id="@+id/windtext"
+                android:paddingLeft="10dp"
+                android:layout_alignTop="@+id/windimage"
+                android:layout_toRightOf="@+id/windimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:paddingLeft="10dp"
+                android:textSize="30dp"
+                android:id="@+id/windtext2"
+                android:layout_below="@+id/windtext"
+                android:layout_toRightOf="@+id/windimage"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

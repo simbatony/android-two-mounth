@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/drawerlayoutweather"
+    android:orientation="vertical"
+    >
+    <!--logo-->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/linerlayoutweather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logoweather"
+            android:scaleType="fitXY"
+            />
+    <!--    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >-->
+
+            <ImageView
+                android:id="@+id/openleftmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/openleftmenu"
+                android:layout_gravity="center_vertical"
+                />
+      <!--  </LinearLayout>-->
+
+
+
+    </FrameLayout>
+
+    <!--查询城市边框-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        >
+        <EditText
+            android:id="@+id/weathercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="请输入要查询的城市" />
+
+        <Button
+            android:id="@+id/weathersearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/weathergps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/refreshweather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imagesrefresh"
+            android:paddingRight="10dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    <!--显示结果-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="今天是"
+                />
+            <TextView
+                android:id="@+id/dataweather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="2015.12.03"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/data2weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="星期五"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="最后更新时间"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/lastupdateweather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="14:00"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wendu"
+                    />
+                <TextView
+                    android:id="@+id/wenduzhiweather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="13~17"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="    "
+                    />
+                <TextView
+                    android:id="@+id/weatherweather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="13~17"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="七日天气预报"
+        android:paddingLeft="20sp"
+
+        />
+
+
+    <ListView
+        android:id="@+id/listviewweather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        >
+    </ListView>
+
+
+</LinearLayout>
+
+
+
+
+ <!--   <ListView
+        android:id="@+id/left_drawerweather"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="#ffffff"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>-->
+
+
+        <include
+            layout="@layout/leftmenulayoutinclude"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

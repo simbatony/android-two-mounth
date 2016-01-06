@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main1">Main1Activity</string>
+    <string name="title_activity_thread">ThreadActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_listview">ListviewActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="title_activity_service">serviceActivity</string>
+    <string name="local_service_started">local_service_started</string>
+    <string name="title_activity_getgps">getgpsActivity</string>
+    <string name="title_activity_spiner">spinerActivity</string>
+    <string name="app_description">Android drawer icon with material design animation</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
+    <string-array name="planets_array">
+
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="title_activity_testdialog">testdialogActivity</string>
+    <string name="title_activity_testleftui">testleftuiActivity</string>
+    <string name="title_activity_dragger">DraggerActivity</string>
+    <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
+    <string name="title_activity_testitemlistview">testitemlistviewActivity</string>
+    <string name="title_activity_drawerlayout2">Drawerlayout2Activity</string>
+    <string name="title_activity_weatheraboutus">WeatheraboutusActivity</string>
+
+    <string name="contentweather">   重庆邮电大学是国家布点设立并重点建设的几所邮电高校之一,是工业和信息化部与重庆市共建的一所以信息科学技术为特色和优势,在邮电通信行业、信息产业领域,在西部乃至全国具有重要地位和影响的教学研究型大学.\n    学校发轫于1950年,在抗战时期交通部邮政总局原址上开办邮政人员培训班；在此基础上,先后举办西南邮电分校、重庆邮电学校和重庆电信学校；1959 年由国务院命名为重庆邮电学院,并开始本科教育；1965年成为当时四川省招收研究生的10所院校之一；“文革”期间,于1970年改建为电信总局529厂,1973年改建为邮电部第九研究所,1979年恢复办学.2000年由原信产部划转重庆市管理,实行部市共建.近年来,学校抓住西部大开发、重庆大建设、信息产业大发展的历史机遇,立足行业,服务地方,加强建设,加快发展,2006 年更名为重庆邮电大学,2013年批准为博士学位授予单位.\n    学校现有在校学生2.4万余人,其中研究生 3000余人.在职教职工 1600 余人,其中教授等正高级职称 180余人,副教授等副高职称近400人, 400余位博士生导师和硕士生导师,外聘了中国科学院、中国工程院和英国、加拿大、美国、波兰、印度等国20 余名院士及100余位知名专家学者为我校兼职教授或名誉教授,我校校友、中国工程院原副院长邬贺铨院士为我校名誉校长、第一届校董事会主席.学校有“国家百千万人才工程”、教育部“新世纪优秀人才支持计划”、省部级学术技术带头人、有突出贡献的中青年专家、重庆市“百人计划”专家、重庆市百名学术学科领军人才培养计划人选、“巴渝学者”特聘教授等各类高层次人才50余人,全国“五一劳动奖章”、全国模范教师、全国师德标兵、全国高等学校优秀骨干教师、重庆市名师、重庆市优秀教育工作者等获得者100余人,国家及省部级科技创新团队、教学团队等22支. </string>
+    <string name="title_activity_weather_feedback">WeatherFeedbackActivity</string>
+    <string name="title_activity_weatherintroduction">WeatherintroductionActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_weatherdetail">WeatherdetailActivity</string>
+    <string name="title_activity_weather_login">Sign in</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_verticallines">VerticallinesActivity</string>
+    <string name="title_activity_logindialog">logindialogActivity</string>
+    <string name="title_activity_canvas">canvasActivity</string>
+    <string name="title_activity_appactivity">appactivityActivity</string>
+    <string name="title_activity_getactivity">getactivityActivity</string>
+    <string name="title_activity_webview">webviewActivity</string>
+    <string name="title_activity_camerous">camerousActivity</string>
+    <string name="title_activity_imageview">ImageviewActivity</string>
+    <string name="title_activity_dialogpicker">dialogpickerActivity</string>
+    <string name="title_activity_xutil">xutilActivity</string>
+    <string name="title_activity_webviewcharts">webviewchartsActivity</string>
+    <string name="title_activity_sq">sqActivity</string>
+    <string name="title_activity_quickdialog">quickdialogActivity</string>
+
+</resources>

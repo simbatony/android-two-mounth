@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layoutaboutus"
+    >
+    <!--logo-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:id="@+id/linerlayoutweather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logoweather"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:id="@+id/openleftmenuaboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/openleftmenu"
+                android:layout_gravity="center_vertical"
+                />
+        </FrameLayout>
+
+<!--
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        android:gravity="center_horizontal"
+        />
+
+
+
+</LinearLayout>
+-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/images"
+                    android:id="@+id/imageviewlogo"
+                    />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/weatherforcasttitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天气预报"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/weatherforcasttitle"
+                            android:text="www.cqupt.edu.cn/"
+                            android:singleLine="true"
+                            android:autoLink="all"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:text="关于我们:"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:id="@+id/aboutusversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="version -2.0"
+                android:paddingRight="30dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                />
+
+        </RelativeLayout>
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/contentweather"
+                            android:textSize="30dp"
+
+                            />
+
+                    </ScrollView>
+
+                    </LinearLayout>
+
+
+
+
+ <!--   <ListView
+        android:id="@+id/left_drawerweatheraboutus"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="#ffffff"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>-->
+
+    <include
+        layout="@layout/leftmenulayoutinclude"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

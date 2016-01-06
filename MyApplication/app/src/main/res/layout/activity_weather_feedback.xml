@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/drawer_layoutfeedback"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/linerlayoutweather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logoweather"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:id="@+id/openleftmenufeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/openleftmenu"
+                android:layout_gravity="center_vertical"
+                />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/textfeedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:textSize="30dp"
+                />
+            <Button
+                android:id="@+id/buttonsendfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/leftmenulayoutinclude"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        />
+
+<!--
+    <ListView
+        android:id="@+id/left_drawerweatherfeedback"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="#ffffff"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>
+-->
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
