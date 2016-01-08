@@ -1,1 +1,5 @@
-# android-two-mounth 21321312321321
+# android-two-mounth  
+两个月以来做出来的简单的demo整合，大多数都在第一个myapplication里边。
+通过修改AndroidManifest修改启动的activity 或者修改startactivity里边要启动的activity来查看其他的内容
+编译工具 android stdio
+最后一个代码是自己找到的一个开源项目，简单的学习了一下
